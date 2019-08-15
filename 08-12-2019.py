@@ -18,8 +18,11 @@ class Store:
         for c in self.categories:
             output += str(i) + ". " + c + "\n"
             i += 1
-
         return output
+
+#  Good practice to have methods to change class variables
+    def change_name(self, new_name):
+        self.name = new_name
 
 
 my_store = Store("The Dugout", ["Running", "Baseball", "Basketball"])
